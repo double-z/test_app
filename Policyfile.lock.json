@@ -1,0 +1,87 @@
+{
+  "revision_id": "6ea9e6c56906a65f8e07e14ae25b826e8ece1053d786f1254a84cd0a91c0358a",
+  "name": "test_app",
+  "run_list": [
+    "recipe[apt::default]",
+    "recipe[build-essential::default]"
+  ],
+  "cookbook_locks": {
+    "apt": {
+      "version": "2.7.0",
+      "identifier": "16c57abbd056543f7d5a15dabbb03261024a9c5e",
+      "dotted_decimal_identifier": "6409580415309396.17870749399956400.55392231660638",
+      "cache_key": "apt-2.7.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/apt/versions/2.7.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/apt/versions/2.7.0/download",
+        "version": "2.7.0"
+      }
+    },
+    "build-essential": {
+      "version": "2.2.3",
+      "identifier": "2a00a41fe9a05349895c7d40a2c7f33fe889a1f8",
+      "dotted_decimal_identifier": "11822653931888723.20698703631262407.267455809823224",
+      "cache_key": "build-essential-2.2.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io/api/v1/cookbooks/build-essential/versions/2.2.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io/api/v1/cookbooks/build-essential/versions/2.2.3/download",
+        "version": "2.2.3"
+      }
+    },
+    "example": {
+      "version": "1.0.0",
+      "identifier": "ca24d6a916197c30c0228e2f89841f12e363852f",
+      "dotted_decimal_identifier": "56898449673951612.13722053529012612.34165984822575",
+      "source": "cookbooks/example",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "21dd3ad7b218729adee8378456f06261cca6f9ab",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "cookbooks/example"
+      }
+    }
+  },
+  "default_attributes": {
+    "at": {
+      "val": "TeST"
+    }
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apt",
+        "= 2.7.0"
+      ],
+      [
+        "build-essential",
+        "= 2.2.3"
+      ],
+      [
+        "example",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "apt (2.7.0)": [
+
+      ],
+      "build-essential (2.2.3)": [
+
+      ],
+      "example (1.0.0)": [
+
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "transport_options": {
+    "ip_address": "192.168.33.123",
+    "username": "vagrant",
+    "ssh_options": {
+      "password": "vagrant"
+    }
+  },
+  "convergence_options": {
+    "chef_server": "https://api.opscode.com/organizations/zzondlo",
+    "chef_config": "# SSL Settings:\nssl_verify_mode :verify_peer\n\n# Policyfile Settings:\nuse_policyfile true\npolicy_document_native_api true\n\npolicy_group \"app_name\"\npolicy_name \"test_app\"\n\n"
+  }
+}
