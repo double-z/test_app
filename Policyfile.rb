@@ -10,10 +10,9 @@ name "test_app"
 default_source :community
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list "apt", "build-essential"
-
-cookbook "apt"
-cookbook "build-essential"
+#run_list "apt", "build-essential"
+run_list "blankone"
+#cookbook "apt"
+#cookbook "build-essential"
 # Specify a custom source for a single cookbook:
-cookbook "example", path: "./cookbooks/example"
-default['at']['val'] = "TeST"
+cookbook "blankone", path: "./cookbooks/blankone"

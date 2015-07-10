@@ -1,6 +1,6 @@
 {
   "transport_options": {
-    "ip_address": "192.168.33.123",
+    "ip_address": "192.168.33.121",
     "username": "vagrant",
     "ssh_options": {
       "password": "vagrant"
